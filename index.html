@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aprendendo HTML na Prática</title>
+</head>
+
+<body>
+
+    <h1>Aprendendo HTML na Prática</h1>
+
+    <ul>
+        <li><a href="#estrutura-basica">Estrutura Básica do HTML</a></li>
+        <li><a href="#tags">Falando sobre Tags</a></li>
+        <li><a href="#atributos">Atributos Básicos</a></li>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+
+    <div id="estrutura-basica">
+        <h2>Estrutura Básica do HTML</h2>
+        <p>O HTML possui uma estrutura hierárquica básica composta por:</p>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code>: Declara a versão do HTML.</li>
+            <li><code>&lt;html&gt;</code>: Contém todo o conteúdo da página.</li>
+            <li><code>&lt;head&gt;</code>: Metadados da página.</li>
+            <li><code>&lt;title&gt;</code>: Define o título da página.</li>
+            <li><code>&lt;body&gt;</code>: Contém o conteúdo visível.</li>
+        </ul>
+        <a href="#">Voltar ao início</a>
+    </div>
+
+
+    <div id="tags">
+        <h2>Falando sobre Tags</h2>
+        <p>No HTML, as tags são elementos que definem e estruturam o conteúdo de uma página. Cada tag é composta por um nome entre colchetes angulares, como <code>&lt;tag&gt;</code>.</p>
+        
+        <h3>Principais Tags:</h3>
+        
+        <ul>
+            <li><code>&lt;h1&gt; a &lt;h6&gt;</code>: Cabeçalhos de diferentes níveis, sendo <code>&lt;h1&gt;</code> o mais importante e <code>&lt;h6&gt;</code> o menos importante.</li>
+            <li><code>&lt;p&gt;</code>: Define um parágrafo de texto.</li>
+            <li><code>&lt;strong&gt;</code>: Torna o texto forte, geralmente exibido em negrito.</li>
+            <li><code>&lt;em&gt;</code>: Enfatiza o texto, geralmente exibido em itálico.</li>
+            <li><code>&lt;i&gt;</code>: Enfatiza o texto em itálico.</li>
+            <li><code>&lt;a&gt;</code>: Cria um link, com o atributo <code>href</code> especificando o URL de destino.</li>
+            <li><code>&lt;img&gt;</code>: Incorpora uma imagem, com o atributo <code>src</code> definindo o caminho da imagem.</li>
+            <li><code>&lt;ul&gt;</code>: Inicia uma lista não ordenada.</li>
+            <li><code>&lt;ol&gt;</code>: Inicia uma lista ordenada.</li>
+            <li><code>&lt;li&gt;</code>: Define um item de lista dentro de <code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code>.</li>
+        </ul>
+    
+        <h3>Exemplos:</h3>
+    
+        <pre>
+    &lt;h1&gt;Título Principal&lt;/h1&gt;
+    &lt;p&gt;Este é um parágrafo de texto.&lt;/p&gt;
+    &lt;strong&gt;Texto Forte&lt;/strong&gt;
+    &lt;i&gt;Texto Em Itálico&lt;/i&gt;
+    &lt;a href="https://www.exemplo.com"&gt;Link Exemplo&lt;/a&gt;
+    &lt;img src="imagem.jpg" alt="Descrição da Imagem"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;/ul&gt;
+        </pre>
+            
+        <a href="#">Voltar ao início</a>
+    </div>
+
+    <div id="atributos">
+        <h2>Atributos Básicos</h2>
+        <p>As tags podem ter atributos que fornecem informações adicionais, por exemplo:</p>
+        <code>&lt;a href="https://www.exemplo.com"&gt;Link Exemplo&lt;/a&gt;</code>
+        <p>Neste caso, <code>href</code> é um atributo da tag <code>&lt;a&gt;</code>.</p>
+        <a href="#">Voltar ao início</a>
+    </div>
+
+    
+   
+    <div id="textos">
+        <h2>Textos</h2>
+        <p>No HTML, existem alguns atributos que podem ser aplicados a tags de texto para estilizar ou modificar o comportamento do conteúdo. Aqui estão alguns exemplos:</p>
+        
+        <h3>Atributos de Texto:</h3>
+        
+        <ul>
+            <li><code>&lt;strong&gt;</code> e <code>&lt;em&gt;</code>: Essas tags podem ser combinadas para dar ênfase forte a uma parte do texto.</li>
+            <li><code>&lt;abbr&gt;</code>: Define uma abreviação ou acrônimo, com o atributo <code>title</code> fornecendo uma descrição completa.</li>
+            <li><code>&lt;sub&gt;</code> e <code>&lt;sup&gt;</code>: Subscrito e sobrescrito, respectivamente.</li>
+            <li><code>&lt;del&gt;</code> e <code>&lt;ins&gt;</code>: Representam texto deletado e texto inserido, úteis em edições.</li>
+            <li><code>&lt;mark&gt;</code>: Destaca parte do texto, muitas vezes utilizado para fins de pesquisa.</li>
+        </ul>
+    
+        <h3>Exemplos:</h3>
+    
+        <pre>
+    &lt;p&gt;Texto com &lt;strong&gt;ênfase forte&lt;/strong&gt; e &lt;em&gt;ênfase&lt;/em&gt;.&lt;/p&gt;
+    &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;
+    &lt;p&gt;10&lt;sup&gt;2&lt;/sup&gt; representa 100.&lt;/p&gt;
+    &lt;p&gt;10&lt;sub&gt;2&lt;/sub&gt; representa 1/100.&lt;/p&gt;
+    &lt;del&gt;Texto antigo&lt;/del&gt; e &lt;ins&gt;Texto novo&lt;/ins&gt;.&lt;/p&gt;
+    &lt;mark&gt;Texto destacado&lt;/mark&gt;
+        </pre>
+    
+        <p>Esses são apenas alguns exemplos, e a combinação desses atributos pode ser usada para criar uma ampla variedade de estilos e formatações de texto.</p>
+    
+        <a href="#">Voltar ao início</a>
+    </div>
+    
+    <div id="listas">
+        <h2>Listas Ordenadas e Não Ordenadas</h2>
+        <p>No HTML, você pode criar listas ordenadas e não ordenadas para organizar informações de forma estruturada. Aqui estão alguns detalhes sobre esses elementos:</p>
+    
+        <h3>Listas Não Ordenadas (<code>&lt;ul&gt;</code>):</h3>
+        
+        <p>As listas não ordenadas são usadas quando a ordem dos itens não é importante. Cada item é marcado com um ponto (•), mas a apresentação real pode variar dependendo do navegador e do estilo aplicado.</p>
+    
+        <h4>Exemplo:</h4>
+        
+        <pre>
+    &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+        </pre>
+    
+        <h3>Listas Ordenadas (<code>&lt;ol&gt;</code>):</h3>
+    
+        <p>As listas ordenadas são usadas quando a ordem dos itens é significativa. Cada item é numerado sequencialmente por padrão, mas isso pode ser personalizado.</p>
+    
+        <h4>Exemplo:</h4>
+    
+        <pre>
+    &lt;ol&gt;
+        &lt;li&gt;Primeiro item&lt;/li&gt;
+        &lt;li&gt;Segundo item&lt;/li&gt;
+        &lt;li&gt;Terceiro item&lt;/li&gt;
+    &lt;/ol&gt;
+        </pre>
+    
+        <h3>Aninhamento de Listas:</h3>
+    
+        <p>É possível aninhar listas dentro de outras listas para criar uma estrutura hierárquica.</p>
+    
+        <h4>Exemplo:</h4>
+    
+        <pre>
+    &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2
+            &lt;ul&gt;
+                &lt;li&gt;Subitem 2.1&lt;/li&gt;
+                &lt;li&gt;Subitem 2.2&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+        </pre>
+    
+        <p>Lembre-se de que o correto aninhamento e fechamento das tags são fundamentais para garantir a validação do HTML.</p>
+    
+        <a href="#">Voltar ao início</a>
+    </div>
+    
+
+    <div id="links">
+        <h2>Links</h2>
+        <p>Links são fundamentais para a navegação em páginas web. No HTML, você utiliza a tag <code>&lt;a&gt;</code> para criar links. Aqui estão alguns detalhes sobre o uso de links:</p>
+    
+        <h3>Tag <code>&lt;a&gt;</code>:</h3>
+    
+        <p>A tag <code>&lt;a&gt;</code> (âncora) é usada para criar hiperlinks. O atributo mais importante é <code>href</code>, que define o URL de destino do link.</p>
+    
+        <h4>Exemplo:</h4>
+    
+        <pre>
+    &lt;a href="https://www.exemplo.com"&gt;Visitar Exemplo&lt;/a&gt;
+        </pre>
+    
+        <h3>Atributo <code>target</code>:</h3>
+    
+        <p>O atributo <code>target</code> define onde abrir o link. O valor <code>_blank</code> abre o link em uma nova janela ou guia.</p>
+    
+        <h4>Exemplo:</h4>
+    
+        <pre>
+    &lt;a href="https://www.exemplo.com" target="_blank"&gt;Abrir em Nova Janela&lt;/a&gt;
+        </pre>
+    
+        <h3>Atributo <code>title</code>:</h3>
+    
+        <p>O atributo <code>title</code> fornece informações adicionais sobre o link quando o usuário passa o mouse sobre ele.</p>
+    
+        <h4>Exemplo:</h4>
+    
+        <pre>
+    &lt;a href="https://www.exemplo.com" title="Site de Exemplo"&gt;Visitar Exemplo&lt;/a&gt;
+        </pre>
+    
+        <h3>Links Internos:</h3>
+    
+        <p>Para criar links internos em uma página, utilize o atributo <code>href</code> com o ID da seção desejada.</p>
+    
+        <h4>Exemplo:</h4>
+    
+        <pre>
+    &lt;a href="#sobre"&gt;Ir para a Seção Sobre&lt;/a&gt;
+        </pre>
+    
+        <a href="#">Voltar ao início</a>
+    </div>
+    
+
+    <div id="referencias">
+        <h2>Referências</h2>
+        <p>Para aprofundar seus conhecimentos em HTML, recomendo verificar os seguintes vídeos do YouTube:</p>
+    
+        <h3>1. "HTML Tutorial for Beginners" por Programming with Mosh</h3>
+        <p>Um tutorial abrangente para iniciantes, cobrindo os fundamentos do HTML.</p>
+        <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" target="_blank">Assistir ao Vídeo</a>
+    
+        <h3>2. "HTML Full Course - Build a Website Tutorial" por freeCodeCamp.org</h3>
+        <p>Um curso completo que guia você na construção de um site usando HTML, CSS e JavaScript.</p>
+        <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg" target="_blank">Assistir ao Vídeo</a>
+    
+        <p>Esses vídeos oferecem excelentes recursos para aprimorar suas habilidades em HTML. Lembre-se de praticar regularmente para fortalecer seu entendimento.</p>
+    
+        <a href="#">Voltar ao início</a>
+    </div>
+    
+
+</body>
+
+</html>
